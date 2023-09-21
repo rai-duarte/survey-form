@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help me improve my work</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" class="width100" required /></label>
+      <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" class="width100" required /></label>
+      <label id="number-label" for="number">Age <input id="number" type="number" min="13" max="120" class="width100" placeholder="Enter your age (opcional)" /></label>
+      <label for="dropdown">How did you find my portfolio?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">LinkedIn</option>
+          <option value="2">UpWork</option>
+          <option value="3">Search on Google</option>
+          <option value="4">Referral from a friend</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+      <label>Would you recommend my portfolio to a friend?
+        <label><input type="radio" name="recommend" value="1" class="inline" /> Definitely</label>
+        <label><input type="radio" name="recommend" value="2" class="inline" /> Maybe</label>
+        <label><input type="radio" name="recommend" value="3" class="inline" /> Not sure</label>
+      </label>
+      <label>Which of my skills are most important?
+        <label><input type="checkbox" value="1" class="inline" /> HTML</label>
+        <label><input type="checkbox" value="2" class="inline" /> CSS</label>
+        <label><input type="checkbox" value="3" class="inline" /> JS</label>
+        <label><input type="checkbox" value="4" class="inline" /> Python</label>
+      </label>
+      <label>Any comments or suggestions? 
+        <textarea placeholder="Enter your comment here..."> </textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit" class="submit" />
+    </form>
+  </body>
+  
